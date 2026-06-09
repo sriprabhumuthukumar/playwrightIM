@@ -4,7 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-        "test": "cucumber-js features/**/*.feature --require steps/*.js --require hooks/*.js --require hooks/world.js"
+         "test": "cucumber-js features/**/*.feature --require-module dotenv/config --require hooks/**/*.js --require steps/**/*.js"
   },
   
   "keywords": [],
