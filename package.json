@@ -4,8 +4,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "cucumber-js features/**/*.feature --require steps/*.js --require hooks/*.js"
+        "test": "cucumber-js features/**/*.feature --require steps/*.js --require hooks/*.js --require hooks/world.js"
   },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
