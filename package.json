@@ -4,7 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "cucumber-js --require steps/*.js --require hooks/*.js"
+    "test": "cucumber-js features/**/*.feature --require steps/*.js --require hooks/*.js"
   },
   "keywords": [],
   "author": "",
