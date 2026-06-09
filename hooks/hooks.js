@@ -4,7 +4,8 @@ import config from "../config/config.js";
 import Loginpage from "../pages/loginpage.js";
 
 Before(async function () {
-   
+   console.log("HEADLESS ENV =", process.env.HEADLESS);
+   console.log("HEADLESS CONFIG =", config.headless);
     this.browser = await chromium.launch({headless:config.headless})
     this.context = await this.browser.newContext()
     this.page = await this.context.newPage()
