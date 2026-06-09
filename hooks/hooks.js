@@ -24,8 +24,8 @@ After(async function (scenario) {
     }
 
 
-    await this.page.close()
-    await this.context.close()
-    await this.browser.close()
+   if(this.page) await this.page.close()
+   if (this.context) await this.context.close()
+   if (this.browser) await this.browser.close()
 
 })
